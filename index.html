@@ -90,17 +90,27 @@
         <button type="submit">Send Message</button>
     </form>
 </section>
-
-<!-- Modal for Join Us -->
-<div id="joinUsModal" class="modal">
+<!-- Modal Content for Join Us Form -->
+<div id="myModal" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close" onclick="closeModal()">&times;</span>
         <h2>Join Us</h2>
-        <p>Select your registration type:</p>
-        <button id="memberBtn">Register as Member</button>
-        <button id="userBtn">Register as User</button>
+        <p>Become a member of Malamiromba Ltd.</p>
+        <form id="joinForm" action="https://formspree.io/f/mwpkkwrw" method="POST">
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your first name">
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" required placeholder="Enter your surname">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <button type="submit">Join Now</button>
+        </form>
     </div>
 </div>
+<a href="#" id="scrollArrow" class="scroll-arrow">↑</a>
 
 <!-- Footer Section -->
 <footer>
